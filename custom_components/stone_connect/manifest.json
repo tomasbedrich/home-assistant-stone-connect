@@ -1,0 +1,13 @@
+{
+  "domain": "stone_connect",
+  "name": "Stone Connect Heater",
+  "codeowners": ["@tomasbedrich"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/tomasbedrich/home-assistant-stone-connect",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/tomasbedrich/home-assistant-stone-connect/issues",
+  "requirements": ["stone-connect>=0.1.0"],
+  "version": "0.1.0"
+}

@@ -1,0 +1,58 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Stone Connect Ohřívač",
+        "description": "Nastavte integraci vašeho Stone Connect ohřívače.",
+        "data": {
+          "host": "IP Adresa"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nepodařilo se připojit k ohřívači. Zkontrolujte IP adresu a ujistěte se, že je ohřívač online."
+    },
+    "abort": {
+      "already_configured": "Zařízení je již nakonfigurováno"
+    }
+  },
+  "entity": {
+    "climate": {
+      "stone_connect": {
+        "state_attributes": {
+          "stone_connect_mode": {
+            "name": "Stone Connect Režim",
+            "state": {
+              "SBY": "Pohotovostní",
+              "MAN": "Ruční",
+              "CMF": "Komfort",
+              "ECO": "Eco",
+              "ANF": "Ochrana proti mrazu",
+              "BST": "Boost",
+              "HIG": "Vysoký výkon",
+              "MED": "Střední výkon",
+              "LOW": "Nízký výkon",
+              "SCH": "Časový plán",
+              "HOL": "Dovolená"
+            }
+          },
+          "power_consumption": {
+            "name": "Spotřeba energie"
+          },
+          "daily_energy": {
+            "name": "Denní spotřeba energie"
+          },
+          "error_code": {
+            "name": "Kód chyby"
+          },
+          "lock_status": {
+            "name": "Stav zámku"
+          },
+          "wifi_signal": {
+            "name": "WiFi Signál"
+          }
+        }
+      }
+    }
+  }
+}

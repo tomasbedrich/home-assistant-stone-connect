@@ -1,0 +1,58 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Stone Connect Heater",
+        "description": "Set up your Stone Connect heater integration.",
+        "data": {
+          "host": "IP Address"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the heater. Please check the IP address and make sure the heater is online."
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "entity": {
+    "climate": {
+      "stone_connect": {
+        "state_attributes": {
+          "stone_connect_mode": {
+            "name": "Stone Connect Mode",
+            "state": {
+              "SBY": "Standby",
+              "MAN": "Manual",
+              "CMF": "Comfort",
+              "ECO": "Eco",
+              "ANF": "Antifreeze",
+              "BST": "Boost",
+              "HIG": "High Power",
+              "MED": "Medium Power",
+              "LOW": "Low Power",
+              "SCH": "Schedule",
+              "HOL": "Holiday"
+            }
+          },
+          "power_consumption": {
+            "name": "Power Consumption"
+          },
+          "daily_energy": {
+            "name": "Daily Energy"
+          },
+          "error_code": {
+            "name": "Error Code"
+          },
+          "lock_status": {
+            "name": "Lock Status"
+          },
+          "wifi_signal": {
+            "name": "WiFi Signal"
+          }
+        }
+      }
+    }
+  }
+}
