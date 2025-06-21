@@ -9,7 +9,6 @@ from typing import Any
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
 from stone_connect.client import StoneConnectHeater
@@ -59,11 +58,9 @@ class StoneConnectDataUpdateCoordinator(DataUpdateCoordinator):
     async def _setup_heater(self) -> None:
         """Set up the heater client."""
         try:
-            session = async_get_clientsession(self.hass)
             self.heater = StoneConnectHeater(
                 host=self.host,
                 timeout=DEFAULT_TIMEOUT,
-                session=session,
             )
 
             # Test the connection

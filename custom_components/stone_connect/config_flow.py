@@ -8,7 +8,6 @@ from typing import Any
 import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.const import CONF_HOST
-from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from stone_connect.client import StoneConnectHeater
 
@@ -58,9 +57,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     async def _test_connection(self, host: str) -> bool:
         """Test if we can connect to the heater."""
         try:
-            session = async_get_clientsession(self.hass)
-
-            async with StoneConnectHeater(host, session=session) as heater:
+            async with StoneConnectHeater(host) as heater:
                 # Try to get device info to test connection
                 await heater.get_info()
                 return True
