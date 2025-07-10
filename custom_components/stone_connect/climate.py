@@ -155,7 +155,7 @@ class StoneConnectClimate(CoordinatorEntity, ClimateEntity):
         attrs = {}
 
         if status.operative_mode:
-            attrs["stone_connect_mode"] = status.operative_mode.value
+            attrs["stone_connect_mode"] = status.operative_mode.value.lower()
 
         if status.power_consumption_watt is not None:
             attrs["power_consumption"] = status.power_consumption_watt

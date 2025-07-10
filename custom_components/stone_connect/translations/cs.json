@@ -23,17 +23,17 @@
           "stone_connect_mode": {
             "name": "Stone Connect Režim",
             "state": {
-              "SBY": "Pohotovostní",
-              "MAN": "Ruční",
-              "CMF": "Komfort",
-              "ECO": "Eco",
-              "ANF": "Ochrana proti mrazu",
-              "BST": "Boost",
-              "HIG": "Vysoký výkon",
-              "MED": "Střední výkon",
-              "LOW": "Nízký výkon",
-              "SCH": "Časový plán",
-              "HOL": "Dovolená"
+              "sby": "Pohotovostní",
+              "man": "Ruční",
+              "cmf": "Komfort",
+              "eco": "Eco",
+              "anf": "Ochrana proti mrazu",
+              "bst": "Boost",
+              "hig": "Vysoký výkon",
+              "med": "Střední výkon",
+              "low": "Nízký výkon",
+              "sch": "Časový plán",
+              "hol": "Dovolená"
             }
           },
           "power_consumption": {

@@ -23,17 +23,17 @@
           "stone_connect_mode": {
             "name": "Stone Connect Mode",
             "state": {
-              "SBY": "Standby",
-              "MAN": "Manual",
-              "CMF": "Comfort",
-              "ECO": "Eco",
-              "ANF": "Antifreeze",
-              "BST": "Boost",
-              "HIG": "High Power",
-              "MED": "Medium Power",
-              "LOW": "Low Power",
-              "SCH": "Schedule",
-              "HOL": "Holiday"
+              "sby": "Standby",
+              "man": "Manual",
+              "cmf": "Comfort",
+              "eco": "Eco",
+              "anf": "Antifreeze",
+              "bst": "Boost",
+              "hig": "High Power",
+              "med": "Medium Power",
+              "low": "Low Power",
+              "sch": "Schedule",
+              "hol": "Holiday"
             }
           },
           "power_consumption": {
